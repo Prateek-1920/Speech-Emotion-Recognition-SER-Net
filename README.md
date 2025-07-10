@@ -1,8 +1,8 @@
-# Speech Emotion Recognition System
+# Speech Emotion Recognition System 🎙️
 
 This repository contains a Python-based Speech Emotion Recognition (SER) system that can predict emotions from audio input. The system uses an LSTM-based model trained on audio features to classify emotions such as neutral, happy, sad, angry, fearful, disgust, and surprised.
 
-## Table of Contents
+## Table of Contents 💻
 
 - [Features](#features)
 - [Requirements](#requirements)
@@ -16,7 +16,7 @@ This repository contains a Python-based Speech Emotion Recognition (SER) system 
 - [Contributing](#contributing)
 - [License](#license)
 
-## Features
+## Features ⚙️
 
 - **Audio Feature Extraction**: Extracts MFCC, Chromagram, Mel Spectrogram, Spectral Contrast, and Tonnetz features from audio.
 - **LSTM Model**: Utilizes a Sequential LSTM model for emotion classification.
@@ -24,7 +24,7 @@ This repository contains a Python-based Speech Emotion Recognition (SER) system 
 - **File Prediction**: Predicts emotion from a given audio file.
 - **Model Training & Evaluation**: Includes functionality to train the model, evaluate its performance, and visualize training history and confusion matrix.
 
-## Requirements
+## Requirements 📃
 
 To run this project, you need Python 3.x and the following libraries:
 
@@ -37,7 +37,7 @@ To run this project, you need Python 3.x and the following libraries:
 - pandas
 - scikit-learn
 
-## Setup
+## Setup 🦿
 
 Follow these steps to set up the project in a virtual environment.
 
@@ -70,7 +70,7 @@ It's highly recommended to use a virtual environment to manage dependencies.
    
    You should see `(venv)` at the beginning of your terminal prompt, indicating that the virtual environment is active.
 
-### Installing Dependencies
+### Installing Dependencies 🚗
 
 Once your virtual environment is active, install the required libraries:
 
@@ -78,7 +78,7 @@ Once your virtual environment is active, install the required libraries:
 pip install librosa sounddevice tensorflow matplotlib seaborn numpy pandas scikit-learn
 ```
 
-## Usage
+## Usage 🤖
 
 1. Run the main script:
    ```bash
@@ -93,24 +93,21 @@ pip install librosa sounddevice tensorflow matplotlib seaborn numpy pandas sciki
    - **5. View Model Architecture**: Displays the summary of the trained model's architecture.
    - **6. Exit**: Exits the program.
 
-## Training Data
+## Training Data 💪
 
 Currently, only the TESS (Toronto Emotional Speech Set) dataset is used for training. The `speech_emotion_recognition.py` script is set up to skip RAVDESS and CREMA-D datasets during the load_data phase.
 
-## Results
+## Results 💯
 
 After training, the system generates plots for training history and a confusion matrix.
 
-### Training History
+### Training History ⚓
 This plot shows the model's accuracy and loss during training and validation over epochs.
 
-### Confusion Matrix
+### Confusion Matrix 💊
 The confusion matrix visualizes the performance of the classification model, showing the counts of correct and incorrect predictions for each emotion.
 
-### Emotion Prediction Example
-An example of a predicted emotion waveform and its corresponding probability distribution.
-
-## Future Work
+## Future Work 🔮
 
 - **More Diverse Training Data**: Incorporate RAVDESS, CREMA-D, and other datasets to improve generalization.
 - **Model Optimization**: Experiment with different model architectures (e.g., CNN-LSTM, attention mechanisms) and hyperparameters.
@@ -118,10 +115,10 @@ An example of a predicted emotion waveform and its corresponding probability dis
 - **Robustness**: Improve the model's ability to detect recorded audio emotion precisely, as more training is needed for higher accuracy on diverse real-world audio.
 - **User Interface**: Develop a more interactive graphical user interface (GUI) for easier use.
 
-## Contributing
+## Contributing 📩
 
 Contributions are welcome! Please feel free to open issues or submit pull requests.
 
-## License
+## License 🪪
 
 This project is licensed under the MIT License - see the LICENSE file for details.
